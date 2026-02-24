@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.voter-container {
+  background: linear-gradient(to bottom right, #eaf3f9, #d0e3f0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.voter-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.voter-box h2 {
+  font-size: 2rem;
+  color: #1b3a66;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.voter-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.voter-box input {
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccd6e0;
+  border-radius: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.voter-box input:focus {
+  border-color: #1b3a66;
+  box-shadow: 0 0 0 3px rgba(27, 58, 102, 0.2);
+  outline: none;
+}
+
+.voter-box button {
+  background-color: #1b3a66;
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.voter-box button:hover:not(:disabled) {
+  background-color: #2a4d86;
+}
+
+.voter-box button:disabled {
+  background-color: #a0b1c8;
+  cursor: not-allowed;
+}
+
+.voter-box .error-message {
+  margin-top: 10px;
+  color: red;
+  font-size: 0.95rem;
+  min-height: 20px;
+}
