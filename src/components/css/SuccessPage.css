@@ -1,0 +1,45 @@
+.success-container {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #d0f5f9, #a9d7e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.success-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.success-box h2 {
+  color: #0d2354;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.success-box button {
+  background-color: #0d2354;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.success-box button:hover {
+  background-color: #0d2354;
+}
+
+.success-box button:active {
+  transform: scale(0.98);
+  background-color: #0d2354;
+}
