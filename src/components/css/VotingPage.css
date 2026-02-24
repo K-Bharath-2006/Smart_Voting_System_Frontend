@@ -1,0 +1,79 @@
+.voting-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e8f0fe, #f0f8ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.voting-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.voting-box h2 {
+  text-align: center;
+  color: #0d2354;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.candidate-card {
+  background-color: #f8fbff;
+  border: 1px solid #cfd9e6;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.candidate-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.candidate-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.candidate-name {
+  font-size: 1.2rem;
+  color: #0d2354;
+  margin-bottom: 12px;
+}
+
+.vote-button {
+  background-color: #0d2354;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vote-button:hover {
+  background-color: #1c3765;
+}
+
+.no-candidates {
+  text-align: center;
+  font-size: 1rem;
+  color: #44566c;
+  margin-top: 20px;
+}
